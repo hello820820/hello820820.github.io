@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoonhyung Park — CV</title>
+<meta name="description" content="Yoonhyung Park — researcher in physically grounded and efficient multimodal AI. Ewha Womans University, Multimodal AI Lab.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1a1d1e;
+    --ink-soft:#4a4f51;
+    --ink-faint:#878d8f;
+    --paper:#fbfaf7;
+    --line:#e3e0d8;
+    --line-soft:#eeece5;
+    --accent:#0f6b6b;
+    --accent-soft:#e7f0ef;
+    --max:880px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',-apple-system,sans-serif;
+    font-size:15px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    padding:0 24px;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:72px 0 96px}
+
+  /* ---- Header ---- */
+  header{
+    display:grid;
+    grid-template-columns:118px 1fr;
+    gap:30px;
+    align-items:start;
+    padding-bottom:30px;
+    border-bottom:1px solid var(--line);
+  }
+  .photo{
+    width:118px;height:148px;
+    object-fit:cover;
+    border-radius:3px;
+    filter:grayscale(100%) contrast(1.02);
+    border:1px solid var(--line);
+  }
+  .id .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:10px;
+  }
+  h1{
+    font-family:'Newsreader',serif;
+    font-weight:500;
+    font-size:42px;
+    line-height:1.04;
+    letter-spacing:-.015em;
+    margin-bottom:4px;
+  }
+  h1 .ko{
+    font-size:21px;
+    color:var(--ink-faint);
+    font-weight:400;
+    margin-left:8px;
+  }
+  .tagline{
+    font-family:'Newsreader',serif;
+    font-style:italic;
+    font-size:17px;
+    color:var(--ink-soft);
+    margin:10px 0 16px;
+    max-width:46ch;
+  }
+  .contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 18px;
+    font-size:13px;
+    font-family:'JetBrains Mono',monospace;
+  }
+  .contact a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:1px}
+  .contact a:hover{color:var(--accent);border-color:var(--accent)}
+
+  /* ---- Section ---- */
+  section{
+    padding:30px 0;
+    border-bottom:1px solid var(--line-soft);
+    display:grid;
+    grid-template-columns:148px 1fr;
+    gap:30px;
+  }
+  section:last-of-type{border-bottom:none}
+  .sec-label{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    padding-top:5px;
+  }
+  .sec-label .num{color:var(--accent);display:block;margin-bottom:5px;font-size:12px}
+
+  /* ---- Intro prose ---- */
+  .lede{
+    font-family:'Newsreader',serif;
+    font-size:18.5px;
+    line-height:1.6;
+    color:var(--ink);
+  }
+  .lede em{color:var(--accent);font-style:italic}
+
+  /* ---- Entry ---- */
+  .entry{margin-bottom:22px}
+  .entry:last-child{margin-bottom:0}
+  .entry .top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:14px;
+  }
+  .entry .title{
+    font-weight:600;
+    font-size:15.5px;
+    color:var(--ink);
+  }
+  .entry .when{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    color:var(--ink-faint);
+    white-space:nowrap;
+  }
+  .entry .where{
+    font-size:14px;
+    color:var(--ink-soft);
+    margin-top:1px;
+  }
+  .entry .desc{
+    font-size:14px;
+    color:var(--ink-soft);
+    margin-top:7px;
+  }
+
+  /* ---- Publications ---- */
+  .pub{
+    padding-left:18px;
+    position:relative;
+    margin-bottom:20px;
+  }
+  .pub::before{
+    content:"";
+    position:absolute;left:0;top:9px;
+    width:7px;height:7px;border-radius:50%;
+    background:var(--accent);
+  }
+  .pub.second::before{background:none;border:1.5px solid var(--accent)}
+  .pub .ptitle{
+    font-weight:600;
+    font-size:15px;
+    line-height:1.45;
+  }
+  .pub .authors{font-size:13.5px;color:var(--ink-soft);margin-top:3px}
+  .pub .authors .me{color:var(--ink);font-weight:600;border-bottom:1.5px solid var(--accent)}
+  .pub .venue{
+    font-family:'Newsreader',serif;
+    font-style:italic;
+    font-size:14px;
+    color:var(--ink);
+    margin-top:3px;
+  }
+  .pub .badge{
+    display:inline-block;
+    font-family:'JetBrains Mono',monospace;
+    font-size:10px;
+    letter-spacing:.05em;
+    color:var(--accent);
+    background:var(--accent-soft);
+    padding:1px 7px;
+    border-radius:3px;
+    margin-left:6px;
+    vertical-align:1px;
+  }
+  .pub .links{margin-top:5px;font-size:12.5px;font-family:'JetBrains Mono',monospace}
+  .pub .links a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--line);margin-right:12px}
+  .pub .links a:hover{color:var(--accent);border-color:var(--accent)}
+
+  /* ---- Skills / tags ---- */
+  .group{margin-bottom:14px}
+  .group:last-child{margin-bottom:0}
+  .group .gl{
+    font-size:12px;
+    font-family:'JetBrains Mono',monospace;
+    letter-spacing:.04em;
+    color:var(--ink-faint);
+    text-transform:uppercase;
+    margin-bottom:6px;
+  }
+  .tags{display:flex;flex-wrap:wrap;gap:7px}
+  .tag{
+    font-size:13px;
+    padding:3px 11px;
+    border:1px solid var(--line);
+    border-radius:100px;
+    color:var(--ink-soft);
+    background:#fff;
+  }
+
+  .lang-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:6px 0;border-bottom:1px dashed var(--line)}
+  .lang-row:last-child{border-bottom:none}
+  .lang-row .l{font-size:14px;color:var(--ink)}
+  .lang-row .r{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--ink-faint)}
+
+  .interests{font-size:14.5px;color:var(--ink-soft);line-height:1.7}
+  .interests strong{color:var(--ink);font-weight:600}
+
+  footer{
+    margin-top:14px;
+    text-align:center;
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    color:var(--ink-faint);
+    letter-spacing:.05em;
+  }
+
+  /* ---- Responsive ---- */
+  @media (max-width:680px){
+    body{padding:0 18px;font-size:14.5px}
+    .wrap{padding:44px 0 64px}
+    header{grid-template-columns:88px 1fr;gap:20px}
+    .photo{width:88px;height:112px}
+    h1{font-size:32px}
+    h1 .ko{display:inline-block;font-size:18px;margin-left:0}
+    section{grid-template-columns:1fr;gap:12px}
+    .sec-label{padding-top:0}
+    .sec-label .num{display:inline;margin-right:8px}
+    .entry .top{flex-direction:column;gap:1px}
+    .lede{font-size:17px}
+  }
+  @media print{
+    body{background:#fff;padding:0}
+    .wrap{padding:0}
+    section,header{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img class="photo" src="profile.png" alt="Yoonhyung Park">
+    <div class="id">
+      <h1>Yoonhyung Park<span class="ko">박윤형</span></h1>
+      <p class="tagline">Toward multimodal AI that is <em>physically grounded</em> and <em>efficient</em> enough for the real world.</p>
+      <div class="contact">
+        <a href="mailto:pyoon820@gmail.com">pyoon820@gmail.com</a>
+        <a href="https://github.com/hello820820" target="_blank" rel="noopener">github.com/hello820820</a>
+        <span>Seoul, Republic of Korea</span>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-label"><span class="num">01</span>Profile</div>
+    <div>
+      <p class="lede">I am an undergraduate researcher at the <strong style="font-weight:600">Multimodal AI Lab</strong>, Ewha Womans University, working on grounding multimodal LLMs in the physical world through sensing and contact, and on making such models efficient enough to deploy. My first-author work on tactile alignment for MLLMs was accepted to <em>ECCV&nbsp;2026</em>.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label"><span class="num">02</span>Interests</div>
+    <div class="interests">
+      <strong>Physical grounding &amp; spatial intelligence</strong> — binding multimodal LLMs to physical interaction and fine-grained contact dynamics.<br>
+      <strong>Efficient &amp; scalable AI</strong> — quantization, lightweight training, and kernel-level optimization for resource-constrained platforms.<br>
+      <strong>Multimodal representation learning</strong> — alignment of new sensing modalities while preventing catastrophic forgetting.
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label"><span class="num">03</span>Education</div>
+    <div>
+      <div class="entry">
+        <div class="top">
+          <span class="title">Ewha Womans University</span>
+          <span class="when">2022 — 2027 (expected)</span>
+        </div>
+        <div class="where">B.S. in Computer Science &amp; Engineering, Division of Software</div>
+        <div class="desc">Expected graduation: early 2027, following completion of the Fall 2026 semester.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label"><span class="num">04</span>Publications</div>
+    <div>
+      <div class="pub">
+        <div class="ptitle">SPLASH: Wake up for Touch! Mask-isolated Tactile Alignment Learning in MLLMs</div>
+        <div class="authors"><span class="me">Yoonhyung Park</span>*, Minji Kim*, Sungwon Moon, Jiyoung Lee&dagger;</div>
+        <div class="venue">ECCV 2026 <span class="badge">accepted · co-first author</span></div>
+        <div class="links">
+          <a href="http://mmai.ewha.ac.kr/splash/" target="_blank" rel="noopener">project page ↗</a>
+        </div>
+      </div>
+      <div class="pub second">
+        <div class="ptitle">Accelerating Vision Transformer Inference via Non-GEMM Kernel Fusion on Edge GPUs</div>
+        <div class="authors">Sejin Park, <span class="me">Yoonhyung Park</span>, Sunhwa Kang, Myung-Kook Yoon&dagger;</div>
+        <div class="venue">IEIE (Institute of Electronics and Information Engineers) 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label"><span class="num">05</span>Projects</div>
+    <div>
+      <div class="entry">
+        <div class="top">
+          <span class="title">Minimum Stable Grip Force Control via Tactile-Guided Future Slip Prediction</span>
+          <span class="when">2026.03 — 06</span>
+        </div>
+        <div class="where">Team project · “Intelligent Robotics” course</div>
+        <div class="desc">A two-stage pipeline for grasping deformable objects: Stage&nbsp;1 predicts future slip probability (next 15 steps) by fusing tactile (ViT-Small), vision (ResNet-18), and proprioception via modality-dropout fusion and a 2-layer LSTM; Stage&nbsp;2 uses it as a real-time signal for closed-loop grip-force control. Built in Isaac Sim with TacEX (GelSight Mini). Multimodal fusion proved most robust under camera occlusion and generalized best to unseen objects. <span style="display:block;margin-top:4px"><a href="https://youtu.be/WiG_Uo2movM" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--line)">demo video ↗</a></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label"><span class="num">06</span>Skills</div>
+    <div>
+      <div class="group">
+        <div class="gl">Frameworks &amp; Tools</div>
+        <div class="tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">Isaac Sim</span>
+          <span class="tag">CUDA</span>
+          <span class="tag">CUTLASS</span>
+          <span class="tag">GelSight</span>
+          <span class="tag">LaTeX</span>
+          <span class="tag">Git</span>
+        </div>
+      </div>
+      <div class="group">
+        <div class="gl">Areas</div>
+        <div class="tags">
+          <span class="tag">Multimodal LLMs</span>
+          <span class="tag">Tactile sensing</span>
+          <span class="tag">Model efficiency</span>
+          <span class="tag">Kernel optimization</span>
+          <span class="tag">Robot manipulation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-label"><span class="num">07</span>Languages</div>
+    <div>
+      <div class="lang-row"><span class="l">English</span><span class="r">TOEFL iBT 110 (2021) · American Int'l School of Johannesburg, 3.5 yrs</span></div>
+      <div class="lang-row"><span class="l">Korean</span><span class="r">Native</span></div>
+    </div>
+  </section>
+
+  <footer>Last updated June 2026</footer>
+
+</div>
+</body>
+</html>
