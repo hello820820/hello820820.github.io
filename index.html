@@ -247,6 +247,14 @@
     body{background:#fff;padding:0}
     .wrap{padding:0}
     section,header{break-inside:avoid}
+    a{color:var(--ink) !important;text-decoration:none}
+    .pub .links a::after{
+      content:" (" attr(href) ")";
+      font-family:'JetBrains Mono',monospace;
+      font-size:9.5px;
+      color:var(--ink-soft);
+    }
+    .contact a{border-bottom:none}
   }
 </style>
 </head>
@@ -306,6 +314,7 @@
         <div class="venue">ECCV 2026 <span class="badge">accepted · co-first author</span></div>
         <div class="links">
           <a href="http://mmai.ewha.ac.kr/splash/" target="_blank" rel="noopener">project page ↗</a>
+          <a href="https://arxiv.org/abs/2607.00302" target="_blank" rel="noopener">arXiv ↗</a>
         </div>
       </div>
       <div class="pub second">
