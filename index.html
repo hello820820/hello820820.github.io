@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yoonhyung Park — CV</title>
-<meta name="description" content="Yoonhyung Park — researcher in physically grounded and efficient multimodal AI. Ewha Womans University, Multimodal AI Lab.">
+<meta name="description" content="Yoonhyung Park — research intern at KAIST CVML Lab and incoming M.S. student at KAIST Kim Jaechul Graduate School of AI. Multimodal models, tactile sensing, and embodied AI.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -147,6 +147,19 @@
     color:var(--ink-soft);
     margin-top:7px;
   }
+  .now{
+    display:inline-block;
+    font-family:'JetBrains Mono',monospace;
+    font-size:10px;
+    letter-spacing:.05em;
+    color:var(--accent);
+    background:var(--accent-soft);
+    padding:1px 7px;
+    border-radius:3px;
+    margin-left:6px;
+    vertical-align:2px;
+    font-weight:500;
+  }
 
   /* ---- Publications ---- */
   .pub{
@@ -265,7 +278,7 @@
     <img class="photo" src="profile.png" alt="Yoonhyung Park">
     <div class="id">
       <h1>Yoonhyung Park<span class="ko">박윤형</span></h1>
-      <p class="tagline">Toward AI that <em>perceives</em> the physical world and <em>acts</em> in it — through multimodal grounding and robot learning.</p>
+      <p class="tagline">Toward AI that <em>perceives</em> the physical world and <em>acts</em> in it — through multimodal grounding and embodied learning.</p>
       <div class="contact">
         <a href="mailto:pyoon820@gmail.com">pyoon820@gmail.com</a>
         <a href="https://github.com/hello820820" target="_blank" rel="noopener">github.com/hello820820</a>
@@ -277,23 +290,31 @@
   <section>
     <div class="sec-label"><span class="num">01</span>Profile</div>
     <div>
-      <p class="lede">I am an undergraduate researcher at the <strong style="font-weight:600">Multimodal AI Lab</strong>, Ewha Womans University, working on grounding multimodal LLMs in the physical world through sensing and contact, and on making such models efficient enough to deploy. My first-author work on tactile alignment for MLLMs was accepted to <em>ECCV&nbsp;2026</em>.</p>
+      <p class="lede">I am a research intern at the <strong style="font-weight:600">Computer Vision &amp; Machine Learning Lab (CVML)</strong>, KAIST, and an incoming M.S. student at the Kim Jaechul Graduate School of AI (Spring 2027), advised by Prof. Hyunjung Shim. I work on multimodal models grounded in the physical world through <em>touch and contact</em>, on embodied systems that act on that perception, and on making such models efficient enough to deploy. My co-first-author work on tactile alignment for MLLMs was accepted to <em>ECCV&nbsp;2026</em>.</p>
     </div>
   </section>
 
   <section>
     <div class="sec-label"><span class="num">02</span>Interests</div>
     <div class="interests">
-      <strong>Physical grounding &amp; spatial intelligence</strong> — binding multimodal LLMs to physical interaction and fine-grained contact dynamics.<br>
-      <strong>Robot learning &amp; decision-making</strong> — connecting grounded perception to action for contact-rich, long-horizon manipulation.<br>
-      <strong>Efficient &amp; scalable AI</strong> — quantization, lightweight training, and kernel-level optimization for resource-constrained platforms.<br>
-      <strong>Multimodal representation learning</strong> — alignment of new sensing modalities while preventing catastrophic forgetting.
+      <strong>Multimodal models &amp; physical grounding</strong> — aligning new sensing modalities such as touch with multimodal LLMs, while preserving what the model already knows.<br>
+      <strong>Tactile sensing</strong> — learning from fine-grained contact signals that vision and language alone cannot capture.<br>
+      <strong>Embodied AI</strong> — connecting grounded perception to action, from VLA models to agent-based robot manipulation.<br>
+      <strong>Efficient multimodal models</strong> — quantization, lightweight training, and kernel-level optimization so these systems can run locally.
     </div>
   </section>
 
   <section>
     <div class="sec-label"><span class="num">03</span>Education</div>
     <div>
+      <div class="entry">
+        <div class="top">
+          <span class="title">KAIST, Kim Jaechul Graduate School of AI</span>
+          <span class="when">2027 — (incoming)</span>
+        </div>
+        <div class="where">M.S. in Artificial Intelligence · CVML Lab, Advisor: Prof. Hyunjung Shim</div>
+        <div class="desc">Admitted with KAIST scholarship. Starting Spring 2027.</div>
+      </div>
       <div class="entry">
         <div class="top">
           <span class="title">Ewha Womans University</span>
@@ -308,6 +329,30 @@
   <section>
     <div class="sec-label"><span class="num">04</span>Experience</div>
     <div>
+      <div class="entry">
+        <div class="top">
+          <span class="title">Computer Vision &amp; Machine Learning Lab, KAIST<span class="now">current</span></span>
+          <span class="when">2026.10 — Present</span>
+        </div>
+        <div class="where">Research Intern · Advisor: Prof. Hyunjung Shim</div>
+        <div class="desc">Participating in research on agent-based robot manipulation, building on prior work in tactile-grounded multimodal models.</div>
+      </div>
+      <div class="entry">
+        <div class="top">
+          <span class="title">Visual Computing Lab, Seoul National University</span>
+          <span class="when">2026.09 — 2026.10</span>
+        </div>
+        <div class="where">Research Intern · Advisor: Prof. Hanbyul Joo</div>
+        <div class="desc">Supported research on hand–object pressure estimation from multi-view video with tactile sensors (data collection and preprocessing). Evaluated AniGen for 3D rigging and built a viser-based 3D viewer for analysis.</div>
+      </div>
+      <div class="entry">
+        <div class="top">
+          <span class="title">Machine Perception and Reasoning Lab, Seoul National University</span>
+          <span class="when">2026.07 — 2026.08</span>
+        </div>
+        <div class="where">Research Intern · Advisor: Prof. Jonghyun Choi</div>
+        <div class="desc">Refined a UR10e + GELLO teleoperation data-collection pipeline (collection code, RLDS formatting) and helped design manipulation tasks for VLA data collection.</div>
+      </div>
       <div class="entry">
         <div class="top">
           <span class="title">Multimodal AI Lab, Ewha Womans University</span>
@@ -356,7 +401,7 @@
   <section>
     <div class="sec-label"><span class="num">07</span>Skills</div>
     <div>
-  
+
       <div class="group">
         <div class="gl">Programming Languages</div>
         <div class="tags">
@@ -365,7 +410,7 @@
           <span class="tag">C</span>
         </div>
       </div>
-  
+
       <div class="group">
         <div class="gl">Frameworks &amp; Tools</div>
         <div class="tags">
@@ -373,36 +418,34 @@
           <span class="tag">Isaac Sim</span>
           <span class="tag">CUDA</span>
           <span class="tag">CUTLASS</span>
-          <span class="tag">GelSight</span>
-          <span class="tag">LaTeX</span>
-          <span class="tag">Git</span>
         </div>
       </div>
-  
+
       <div class="group">
         <div class="gl">Areas</div>
         <div class="tags">
           <span class="tag">Multimodal LLMs</span>
-          <span class="tag">Continual Learning</span>
-          <span class="tag">Robot Manipulation</span>
           <span class="tag">Tactile Sensing</span>
+          <span class="tag">Embodied AI</span>
+          <span class="tag">Robot Manipulation</span>
+          <span class="tag">Continual Learning</span>
           <span class="tag">Model Efficiency</span>
           <span class="tag">Kernel Optimization</span>
         </div>
       </div>
-  
+
     </div>
   </section>
 
   <section>
     <div class="sec-label"><span class="num">08</span>Languages</div>
     <div>
-      <div class="lang-row"><span class="l">English</span><span class="r">TOEFL iBT 110 (2021) · American Int'l School of Johannesburg, 3.5 yrs</span></div>
+      <div class="lang-row"><span class="l">English</span><span class="r">Fluent · American Int'l School of Johannesburg, 3.5 yrs</span></div>
       <div class="lang-row"><span class="l">Korean</span><span class="r">Native</span></div>
     </div>
   </section>
 
-  <footer>Last updated June 2026</footer>
+  <footer>Last updated October 2026</footer>
 
 </div>
 </body>
